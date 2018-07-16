@@ -1,18 +1,28 @@
+// import App from '../App'
+
 import * as layouts from '../Layouts'
 import * as pages from '../Pages'
 
 // A route config is just a data object passed into <Route> component.
 export default [
   {
-    component: layouts.LayoutBase,
+    component: layouts.LayoutStandard,
     routes: [
       {
         path: '/create',
         component: pages.PostCreate,
       },
       {
+        path: '/about',
+        component: pages.About,
+      },
+      {
+        path: '/blog',
+        component: pages.Blog,
+      },
+      {
         path: '/search',
-        component: layouts.LayoutFull,
+        component: layouts.LayoutBase,
         routes: [
           {
             path: '/search/results',
@@ -24,7 +34,7 @@ export default [
       },
       {
         path: '/',
-        component: layouts.LayoutStandard,
+        component: layouts.LayoutBase,
         routes: [
           {
             path: '/',
