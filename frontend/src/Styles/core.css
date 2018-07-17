@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0;
+  display: block; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  *:focus {
+    outline: 0; }
+
+::placeholder {
+  color: #ffffff; }
+
+.layoutStandard .logo, .layoutStandard .search {
+  height: 70px;
+  color: #ffffff; }
+
+.layoutStandard .logo {
+  background: #141C47;
+  width: 130px;
+  float: left; }
+  .layoutStandard .logo a {
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none; }
+
+.layoutStandard .search {
+  background: #0D163A; }
+  .layoutStandard .search input {
+    position: absolute;
+    top: 0;
+    left: 130px;
+    height: 65px;
+    width: 100%;
+    background: 0;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin: 0;
+    padding: 0px 30px 5px; }
+
+.layoutStandard .menu {
+  background: #ffffff;
+  width: 130px;
+  float: left;
+  height: 100vh;
+  padding: 0; }
+  .layoutStandard .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .layoutStandard .menu ul li a {
+      display: block;
+      padding: 3rem 0;
+      text-align: center;
+      color: #7A838F;
+      text-decoration: none; }
+    .layoutStandard .menu ul li.active {
+      border-left: 2px solid blue; }
+
+.layoutStandard .main {
+  grid-area: main;
+  background: #EEF2F9; }
+  .layoutStandard .main .cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    border-radius: 10px;
+    grid-gap: 20px; }
+    @media (max-width: 800px) {
+      .layoutStandard .main .cards {
+        grid-template-columns: auto auto auto; } }
+    .layoutStandard .main .cards .item {
+      background: #ffffff;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0px 0px 20px #eaeaea;
+      border-radius: .25rem; }

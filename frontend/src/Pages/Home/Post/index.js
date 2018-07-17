@@ -71,7 +71,7 @@ class Post extends Component {
   render() {
     const editing = this.state.editing;
     return (
-      <div>
+      <div className='item'>
         {!editing ? (
           <div>
             <h4>{this.state.post.title}</h4>

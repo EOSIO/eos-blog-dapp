@@ -26,17 +26,13 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="Home">
-        <div className="pure-g">
-          <div className="pure-u-1">
-            <Display
-              posts={this.state.posts}
-              deletePost={this.deletePost}
-              editPost={this.editPost}
-              likePost={this.likePost}
-            />
-          </div>
-        </div>
+      <div className="cards">
+        <Display
+          posts={this.state.posts}
+          deletePost={this.deletePost}
+          editPost={this.editPost}
+          likePost={this.likePost}
+        />
       </div>
     );
   }

@@ -43,6 +43,16 @@ export default [
             name: 'Home',
           },
           {
+            path: '/posts',
+            exact: true,
+            component: pages.Home,
+            name: 'Posts',
+          },
+          {
+            path: '/posts/:id',
+            component: pages.Post
+          },
+          {
             component: pages.NotFound,
             name: 'Not Found',
           },
