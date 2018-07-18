@@ -45,7 +45,7 @@ export default [
           {
             path: '/posts',
             exact: true,
-            component: pages.Home,
+            component: pages.Posts,
             name: 'Posts',
           },
           {
